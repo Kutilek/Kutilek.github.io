@@ -1,0 +1,98 @@
+/* Styles for the header */
+body, html
+{
+  margin:0;
+  padding:0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sidenav 
+{
+  background-color: black;
+  overflow: hidden;
+  font-size: 2vw;
+}
+
+/* Links inside the navbar */
+.sidenav a 
+{
+  display: table-cell;
+  vertical-align: middle;
+  float: left;
+  color: white;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+.sidenav .title
+{
+  float: left;
+  font-weight: bold;
+}
+
+.sidenav .buttons
+{
+  float: right;
+}
+
+.sidenav .buttons a:hover
+{
+  color: #007042e6;
+}
+    
+  /* Styles for the main content */
+  main {
+   /* max-width: 1200px;*/
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  /* Styles for the about me section */
+  .about-me 
+  {
+
+  }
+
+  .about-me img {
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+    object-position: 15% 15%;
+  }
+  
+  /* Styles for the footer */
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Styles for the gallery section */
+  .gallery {
+    background: white;
+  }
+  
+  .gallery h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .gallery .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .gallery .image-container a {
+    display: block;
+    width: 32%;
+    margin-bottom: 20px;
+  }
+  
+  .gallery .image-container img {
+    width: 100%;
+  }
+  
+

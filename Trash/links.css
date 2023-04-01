@@ -1,0 +1,28 @@
+body
+{
+    align-content: center;
+
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("Links/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-color: black;
+}
+
+img
+{
+    width: 12vw;
+}
+
+h4
+{
+    text-align: center;
+    color: white;
+    font-size: 150%;
+}
+
+hr
+{
+    border: 29px solid black;
+    border-radius:5px;
+}
