@@ -81,18 +81,21 @@ body, html
   
   .gallery .image-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
   }
   
   .gallery .image-container a {
-    display: block;
-    width: 32%;
-    margin-bottom: 20px;
+    width: 31%;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    background-color: rgba(180, 180, 180, 0.568);   
   }
   
   .gallery .image-container img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 400px;
+    display: block;
+    margin: auto;
   }
-  
-
