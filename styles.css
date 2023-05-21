@@ -35,9 +35,17 @@ body, html
   float: right;
 }
 
+.sidenav .buttons a
+{
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
 .sidenav .buttons a:hover
 {
   color: #f2f231;
+  -webkit-transform: scale(1.05);
+	  transform: scale(1.05);
 }
     
   /* Styles for the main content */
@@ -124,4 +132,41 @@ body, html
     opacity: .9;
     -webkit-transform: scale(1.05);
 	  transform: scale(1.05);
+  }
+
+  .image
+  {
+    display: flex;
+    margin-bottom: -4px;
+    margin: auto;
+  }
+
+  .image a
+  {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 50px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 1;
+	  -webkit-transition: .3s ease-in-out;
+	  transition: .3s ease-in-out;
+  }
+
+  .image a:hover
+  {
+    opacity: .75;
+    -webkit-transform: scale(1.1);
+	  transform: scale(1.1);
+  }
+
+  .image img
+  {
+    max-height: 900px;
+    max-width: 100%;
+    margin: auto;
   }
