@@ -37,7 +37,7 @@ body, html
 
 .sidenav .buttons a:hover
 {
-  color: #007042e6;
+  color: #f2f231;
 }
     
   /* Styles for the main content */
@@ -48,16 +48,29 @@ body, html
   }
   
   /* Styles for the about me section */
-  .about-me 
+
+  .about-me img 
   {
-
-  }
-
-  .about-me img {
     display: flex;
     width: 100%;
     object-fit: cover;
     object-position: 15% 15%;
+  }
+
+  .about-me h1  
+  {
+    font-size: 100px;
+    position: absolute;
+    color: black;
+    margin-top: 30px;
+    left: 20px;
+    width: 100%;
+  }
+
+  .about-me h1 .podtext
+  {
+    font-size: 75px;
+    position: absolute;
   }
   
   /* Styles for the footer */
@@ -69,33 +82,46 @@ body, html
   }
   
   /* Styles for the gallery section */
-  .gallery {
+  .gallery 
+  {
     background: white;
+    text-align: center;
   }
   
-  .gallery h2 {
-    text-align: center;
+  .gallery h2 
+  {
+    font-size: 40px;
     color: black;
     margin-bottom: 20px;
+    margin-top: 90px;
+  }
+
+  .gallery a
+  {
+    margin: 5px;
+    text-decoration: none;
   }
   
-  .gallery .image-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .gallery img 
+  {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    width: 30%;
+	  height: 500px;
+    object-fit: cover;
+    overflow: hidden;
+    opacity: 1;
+	  -webkit-transition: .3s ease-in-out;
+	  transition: .3s ease-in-out;
+    -webkit-transform: scale(1);
+	  transform: scale(1);
   }
-  
-  .gallery .image-container a {
-    width: 31%;
-    border-width: 5px;
-    border-color: black;
-    border-style: solid;
-    background-color: rgba(180, 180, 180, 0.568);   
-  }
-  
-  .gallery .image-container img {
-    max-width: 100%;
-    max-height: 400px;
-    display: block;
-    margin: auto;
+
+  .gallery img:hover
+  {
+    opacity: .9;
+    -webkit-transform: scale(1.05);
+	  transform: scale(1.05);
   }
